@@ -13,3 +13,20 @@
   height: 200px;
   background-size: cover;
 }
+
+.flat-show-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.flat-show-card ul > li {
+  display: inline-block;
+  font-size: 2em;
+}
+
+.flat-show-card a {
+  color: black;
+  &:hover {
+    color: blue;
+  }
+}
