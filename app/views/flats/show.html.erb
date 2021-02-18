@@ -1,3 +1,31 @@
-<div class="container">
+<div class="banner" style="background-image: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)), url('https://source.unsplash.com/300x300/?flat,<%= @flat.name %>');">
+</div>
 
+<div class="container margin-top-negative">
+  <div class="row">
+    <div class="col-8">
+      <div class="flat-show-card p-4 bg-light">
+        <h1><%= @flat.name %></h1>
+        <p><%= @flat.address %></p>
+      </div>
+      <div class="flat-show-card p-4 bg-light mt-4">
+        <h2>A bit more about this flat...</h2>
+        <p><%= @flat.description %> </p>
+      </div>
+    </div>
+    <div class="col-4">
+      <div class="flat-show-card p-4 bg-light">
+        <h2>Book this place!</h2>
+        <p>form here</p>
+      </div>
+      <div class="flat-show-card p-4 bg-light mt-4">
+        <h2>Details</h2>
+        <p>people and price</p>
+      </div>
+      <div class="flat-show-card p-4 bg-light mt-4">
+        <h2>Share</h2>
+        <p>social Media here</p>
+      </div>
+    </div>
+  </div>
 </div>

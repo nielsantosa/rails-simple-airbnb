@@ -1,23 +1,24 @@
-<div class="container">
+<div class="container my-3">
   <h1>All our Flats (<%= Flat.count %>)</h1>
 
   <div class="cards">
     <% @flats.each do |flat| %>
     <div class="card">
       <img src="https://source.unsplash.com/300x300/?flat" class="card-img-top" alt="<%= flat.name %>">
-      <div class="card-body">
-        <h5 class="card-title"><%= flat.name %></h5>
+      <div class="card-body bg-light p-4">
+        <h4 class="card-title font-weight-bold"><%= flat.name %></h4>
         <p class="card-text"><%= flat.address %></p>
-        <span class="card-text"><i class="fas fa-user-friends"></i><%= flat.number_of_guests %></span>
-        <span class="card-text"><i class="fas fa-euro-sign"></i><%= flat.price_per_night %></span>
+        <span class="card-text"><i class="fas fa-user-friends"></i> <%= flat.number_of_guests %></span>
+        <span class="card-text"><i class="fas fa-euro-sign"></i> <%= flat.price_per_night %></span>
       </div>
-      <div class="card-bot">
+      <div class="card-bot d-flex p-4">
         <%= link_to "More info", flat_path(flat) %>
+        <%= link_to "Edit", edit_flat_path(flat), class: "mx-3 text-warning"%>
+        <%= link_to "Remove", flat_path(flat), method: :delete, class: "text-danger"%>
       </div>
     </div>
     <% end %>
   </div>
-
 </div>
 
 

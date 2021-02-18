@@ -1,0 +1,15 @@
+.cards {
+  // display: flex-wrap;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.card {
+  box-shadow: 2px 3px 8px lightgrey;
+}
+
+.card > img {
+  height: 200px;
+  background-size: cover;
+}
